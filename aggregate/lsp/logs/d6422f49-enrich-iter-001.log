@@ -1,0 +1,47 @@
+[2026-04-10T19:40:03Z] === ENRICH ITERATION 1 START | repo=ruby/rdoc sha=d6422f49 ===
+[2026-04-10T19:40:03Z] [iter=1] PHASE START: enrich repo=ruby/rdoc sha=d6422f49 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d6422f49-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d6422f499fb2961b91de400f48426fc6d3fa5b67.nq.gz
+[2026-04-10T19:40:10Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-10T19:40:30Z] [iter=1] AST store loaded triples=2401922 load_secs=19 mem_mb=862 MB
+[2026-04-10T19:40:30Z] [iter=1] Step 2: Finding LSP targets mem_mb=862 MB
+[2026-04-10T19:40:41Z] [iter=1] LSP targets found call_sites=36087 imports=0 extends=1 implements=0 secs=11
+[2026-04-10T19:40:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=862 MB
+[2026-04-10T19:41:06Z] [iter=1] Position index built positions=162869 nodes_with_types=202664 secs=16 mem_mb=862 MB
+[2026-04-10T19:41:06Z] [iter=1] Step 3: Starting LSP resolution mem_mb=862 MB already_completed_types=[] already_completed_files=0
+[2026-04-10T19:41:06Z] [iter=1] Resolving target type target_type=call_site count=36087
+[2026-04-10T19:41:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=test/rdoc/rdoc_options_test.rb
+[2026-04-10T19:45:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=1 resolved=56 errors=254 current=test/rdoc/parser/c_test.rb
+[2026-04-10T19:56:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.3 files_done=2 resolved=75 errors=917 current=test/rdoc/parser/ruby_test.rb
+[2026-04-10T20:51:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.5 files_done=3 resolved=79 errors=2998 current=test/rdoc/rdoc_servlet_test.rb
+[2026-04-10T20:54:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.2 files_done=4 resolved=145 errors=3168 current=test/rdoc/code_object/attr_test.rb
+[2026-04-10T20:55:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.8 files_done=5 resolved=153 errors=3269 current=test/rdoc/markup/to_markdown_test.rb
+[2026-04-10T20:58:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.1 files_done=6 resolved=154 errors=3415 current=test/rdoc/rdoc_markdown_test_test.rb
+[2026-04-10T20:59:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.0 files_done=7 resolved=181 errors=3462 current=test/rdoc/rdoc_context_test.rb
+[2026-04-10T21:07:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.5 files_done=8 resolved=187 errors=3996 current=lib/rdoc/markdown.rb
+[2026-04-10T21:50:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.1 files_done=9 resolved=217 errors=6255 current=test/rdoc/rdoc_rubygems_hook_test.rb
+[2026-04-10T21:52:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.6 files_done=10 resolved=355 errors=6413 current=lib/rdoc/ri/driver.rb
+[2026-04-10T22:00:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.7 files_done=11 resolved=439 errors=6920 current=lib/rdoc/rd/block_parser.rb
+[2026-04-10T22:03:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.2 files_done=12 resolved=505 errors=7072 current=test/rdoc/markup/parser_test.rb
+[2026-04-10T22:09:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.7 files_done=13 resolved=506 errors=7454 current=test/rdoc/generator/pot/po_entry_test.rb
+[2026-04-10T22:12:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.7 files_done=15 resolved=514 errors=7639 current=lib/rdoc/comment.rb
+[2026-04-10T22:14:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.3 files_done=16 resolved=528 errors=7740 current=test/rdoc/rdoc_text_test.rb
+[2026-04-10T22:16:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=156.1 files_done=17 resolved=532 errors=7851 current=test/rdoc/ri/driver_test.rb
+[2026-04-10T22:23:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.5 files_done=18 resolved=544 errors=8313 current=lib/rdoc/code_object/class_module.rb
+[2026-04-10T22:29:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=169.8 files_done=19 resolved=554 errors=8704 current=test/rdoc/markup/to_tt_only_test.rb
+[2026-04-10T22:30:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=170.7 files_done=20 resolved=555 errors=8763 current=lib/rdoc/markup/to_markdown.rb
+[2026-04-10T22:31:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=171.4 files_done=21 resolved=559 errors=8810 current=lib/rdoc/store.rb
+[2026-04-10T22:34:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=174.7 files_done=22 resolved=607 errors=9017 current=test/rdoc/rdoc_store_test.rb
+[2026-04-10T22:41:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=181.9 files_done=23 resolved=671 errors=9467 current=lib/rdoc/stats/verbose.rb
+[2026-04-10T22:43:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=183.2 files_done=26 resolved=695 errors=9546 current=test/rdoc/rdoc_context_section_test.rb
+[2026-04-10T22:44:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=184.4 files_done=27 resolved=703 errors=9621 current=lib/rdoc/cross_reference.rb
+[2026-04-10T23:05:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=205.3 files_done=29 resolved=727 errors=10931 current=test/rdoc/markup/to_rdoc_test.rb
+[2026-04-10T23:07:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=207.7 files_done=30 resolved=728 errors=11084 current=test/rdoc/markup/to_html_test.rb
+[2026-04-10T23:13:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=213.5 files_done=31 resolved=731 errors=11449 current=lib/rdoc/options.rb
+[2026-04-10T23:17:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=217.8 files_done=32 resolved=844 errors=11715 current=lib/rdoc/encoding.rb
+[2026-04-10T23:19:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=219.6 files_done=34 resolved=861 errors=11830 current=test/rdoc/parser/changelog_test.rb
+[2026-04-10T23:20:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.8 files_done=35 resolved=869 errors=11904 current=test/rdoc/rdoc_cross_reference_test.rb
+[2026-04-10T23:22:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.5 files_done=36 resolved=871 errors=12014 current=test/rdoc/parser/prism_ruby_test.rb
+[2026-04-10T23:39:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=239.6 files_done=37 resolved=878 errors=12877 current=lib/rdoc/parser/c.rb
+[2026-04-10T23:40:07Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=37 new_files_this_iter=37 mem_mb=862 MB
+[2026-04-10T23:40:07Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/d6422f499fb2961b91de400f48426fc6d3fa5b67.nq.gz triples=64448
+[2026-04-10T23:40:08Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-10T23:40:08Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.1 files_completed=37
